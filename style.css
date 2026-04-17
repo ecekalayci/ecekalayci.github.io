@@ -253,8 +253,10 @@ h3 { font-size: 1.7rem; }
 .teaching-card span { display: inline-block; margin-top: 0.8rem; color: var(--highlight); font-weight: 700; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 0.9rem; margin: 1.5rem 0; }
 .contact-links a { padding: 0.8rem 1rem; border-radius: 999px; background: var(--surface-strong); border: 1px solid var(--border); color: var(--accent-strong); font-weight: 700; }
-.contact-item { display: flex; flex-direction: column; align-items: flex-start; gap: 0.45rem; }
-.contact-value { margin: 0; padding-left: 0.2rem; color: var(--muted); font-size: 0.95rem; }
+.contact-item { display: flex; }
+.contact-card-link { display: flex; flex-direction: column; align-items: flex-start; gap: 0.2rem; min-width: 14rem; }
+.contact-label { font-weight: 700; color: var(--accent-strong); }
+.contact-value { color: var(--muted); font-size: 0.95rem; font-weight: 500; }
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
