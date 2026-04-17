@@ -251,10 +251,11 @@ h3 { font-size: 1.7rem; }
 .publications-toggle { margin: 1.5rem 0; }
 .teaching-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .teaching-card span { display: inline-block; margin-top: 0.8rem; color: var(--highlight); font-weight: 700; }
-.contact-links { display: flex; flex-wrap: wrap; gap: 0.9rem; margin: 1.5rem 0; }
-.contact-links a { padding: 0.8rem 1rem; border-radius: 999px; background: var(--surface-strong); border: 1px solid var(--border); color: var(--accent-strong); font-weight: 700; }
+.contact-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, max-content)); gap: 0.9rem; margin: 1.5rem 0; align-items: start; }
 .contact-item { display: flex; }
+.contact-stack { display: flex; flex-direction: column; gap: 0.9rem; }
 .contact-card-link, .contact-card-static { display: flex; flex-direction: column; align-items: flex-start; gap: 0.2rem; min-width: 14rem; padding: 0.8rem 1rem; border-radius: 999px; background: var(--surface-strong); border: 1px solid var(--border); }
+.contact-card-link { color: var(--accent-strong); font-weight: 700; }
 .contact-label { font-weight: 700; color: var(--accent-strong); }
 .contact-value { color: var(--muted); font-size: 0.95rem; font-weight: 500; }
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
@@ -291,5 +292,6 @@ h3 { font-size: 1.7rem; }
   .section { padding: 4.5rem 0; }
   .container { width: min(calc(100% - 1.2rem), var(--container)); }
   .about-panel, .info-card, .timeline-item, .education-card, .stack-card, .publication-highlight, .publication-category, .teaching-card, .contact-panel { padding: 1.35rem; }
-  .hero-actions, .contact-links { flex-direction: column; align-items: stretch; }
-}
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .contact-links { grid-template-columns: 1fr; }
+  }
